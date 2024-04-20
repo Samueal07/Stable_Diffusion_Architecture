@@ -1,14 +1,15 @@
 # Stable Diffusion Architecture
 
 ## Overview
+![image](https://github.com/Samueal07/Stable_Diffusion_Architecture/assets/99087302/76bad716-153e-477c-8a46-4fa44095b8b8)
 
 PyTorch implementation of Stable Diffusion, including various components such as 
 -Variational Autoencoder 
 -Clip Encoder 
 -Unet Architecture 
 -Decoder, Latent Diffusion Models 
--Text-to-Image, Image-to-Image based Prompts
--Neural Inpainting.
+-Text-to-Image based Prompts
+
 
 ## Features
 
@@ -18,8 +19,6 @@ PyTorch implementation of Stable Diffusion, including various components such as
 - **Decoder:** Model for generating realistic images from latent representations.
 - **Latent Diffusion Models:** Implementation of Stable Diffusion models with simplified math as defined in the DDPM paper.
 - **Text-to-Image:** Capability to generate images from textual descriptions.
-- **Image-to-Image:** Ability to transform input images into new images.
-- **Inpainting:** Reconstruction of images with missing or damaged parts.
 
 ## Getting Started
 
