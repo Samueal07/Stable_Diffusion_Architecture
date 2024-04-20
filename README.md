@@ -1,7 +1,8 @@
 # Stable Diffusion Architecture
 
 ## Overview
-![image](https://github.com/Samueal07/Stable_Diffusion_Architecture/assets/99087302/76bad716-153e-477c-8a46-4fa44095b8b8)
+![image](https://github.com/Samueal07/Stable_Diffusion_Architecture/assets/99087302/7260eca3-6bc0-41f2-9d5d-ca5542c20c6f)
+
 
 PyTorch implementation of Stable Diffusion, including various components such as 
 -Variational Autoencoder 
