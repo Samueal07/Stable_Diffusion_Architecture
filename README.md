@@ -6,8 +6,14 @@
 
 PyTorch implementation of Stable Diffusion, including various components such as 
 -Variational Autoencoder 
--Clip Encoder 
+![image](https://github.com/Samueal07/Stable_Diffusion_Architecture/assets/99087302/70b09e8b-0dfd-47d6-989a-1576a6058c84)
+
+-Clip Encoder
+![image](https://github.com/Samueal07/Stable_Diffusion_Architecture/assets/99087302/86633889-8f8b-40d9-8114-4b46b149e2d3)
+
 -Unet Architecture 
+![image](https://github.com/Samueal07/Stable_Diffusion_Architecture/assets/99087302/478a396a-d1a3-46a0-ac51-651377bb06e6)
+
 -Decoder, Latent Diffusion Models 
 -Text-to-Image based Prompts
 
