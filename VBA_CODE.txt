@@ -1,0 +1,147 @@
+Sub CreatePitchPresentation()
+    Dim PowerPointApp As Object
+    Dim Presentation As Object
+    Dim Slide As Object
+    
+    ' Open PowerPoint
+    Set PowerPointApp = CreateObject("PowerPoint.Application")
+    PowerPointApp.Visible = True
+    
+    ' Create a new presentation
+    Set Presentation = PowerPointApp.Presentations.Add
+    
+    ' Slide 1: Introduction
+    Set Slide = Presentation.Slides.Add(1, 11) ' Title only layout
+    With Slide.Shapes.Title.TextFrame.TextRange
+        .Text = "Welcome to SmartPet Buddy: Your Pet's New Best Friend!"
+        .Font.Size = 36
+        .Font.Bold = True
+    End With
+    
+    ' Slide 2: The Problem
+    Set Slide = Presentation.Slides.Add(2, 11)
+    With Slide.Shapes.Title.TextFrame.TextRange
+        .Text = "The Problem"
+        .Font.Size = 28
+        .Font.Bold = True
+    End With
+    With Slide.Shapes(1).TextFrame.TextRange
+        .Text = "Pets get bored. They become couch potatoes. And we know what happens when they become couch potatoes, right?"
+        .Font.Size = 20
+    End With
+    
+    ' Slide 3: The Solution: SmartPet Buddy
+    Set Slide = Presentation.Slides.Add(3, 11)
+    With Slide.Shapes.Title.TextFrame.TextRange
+        .Text = "The Solution: SmartPet Buddy"
+        .Font.Size = 28
+        .Font.Bold = True
+    End With
+    With Slide.Shapes(1).TextFrame.TextRange
+        .Text = "Introducing SmartPet Buddy: The robotic companion that will get your pets off the couch and bring joy to their lives!"
+        .Font.Size = 20
+    End With
+    
+    ' Slide 4: Benefits for Pet Owners
+    Set Slide = Presentation.Slides.Add(4, 11)
+    With Slide.Shapes.Title.TextFrame.TextRange
+        .Text = "Benefits for Pet Owners"
+        .Font.Size = 28
+        .Font.Bold = True
+    End With
+    With Slide.Shapes(1).TextFrame.TextRange
+        .Text = "Say goodbye to pet guilt and hello to peace of mind. SmartPet Buddy keeps your pets entertained, active, and out of trouble!"
+        .Font.Size = 20
+    End With
+    
+    ' Slide 5: Features Overview
+    Set Slide = Presentation.Slides.Add(5, 11)
+    With Slide.Shapes.Title.TextFrame.TextRange
+        .Text = "Features Overview"
+        .Font.Size = 28
+        .Font.Bold = True
+    End With
+    With Slide.Shapes(1).TextFrame.TextRange
+        .Text = "SmartPet Buddy offers interactive play, exercise, and real-time monitoring. It's like having a personal trainer and pet-sitter in one!"
+        .Font.Size = 20
+    End With
+    
+    ' Slide 6: Testimonials
+    Set Slide = Presentation.Slides.Add(6, 11)
+    With Slide.Shapes.Title.TextFrame.TextRange
+        .Text = "Testimonials"
+        .Font.Size = 28
+        .Font.Bold = True
+    End With
+    With Slide.Shapes(1).TextFrame.TextRange
+        .Text = "My cat has never been happier! SmartPet Buddy even taught her how to dance! - Mr. Whiskers"
+        .Font.Size = 20
+    End With
+    
+    ' Slide 7: Call to Action
+    Set Slide = Presentation.Slides.Add(7, 11)
+    With Slide.Shapes.Title.TextFrame.TextRange
+        .Text = "Call to Action"
+        .Font.Size = 28
+        .Font.Bold = True
+    End With
+    With Slide.Shapes(1).TextFrame.TextRange
+        .Text = "Don't let your pets miss out on the fun! Visit our website and unleash the joy with SmartPet Buddy today!"
+        .Font.Size = 20
+    End With
+    
+    ' Additional Slides for Stable Diffusion Architecture
+    ' Slide 8: Stable Diffusion Overview
+    Set Slide = Presentation.Slides.Add(8, 11) ' Title only layout
+    With Slide.Shapes.Title.TextFrame.TextRange
+        .Text = "Stable Diffusion Overview"
+        .Font.Size = 28
+        .Font.Bold = True
+    End With
+    With Slide.Shapes(1).TextFrame.TextRange
+        .Text = "Stable Diffusion is an advanced model architecture for text-to-image conversion, featuring a robust set of components."
+        .Font.Size = 20
+    End With
+    
+    ' Slide 9: Key Components
+    Set Slide = Presentation.Slides.Add(9, 11)
+    With Slide.Shapes.Title.TextFrame.TextRange
+        .Text = "Key Components"
+        .Font.Size = 28
+        .Font.Bold = True
+    End With
+    With Slide.Shapes(1).TextFrame.TextRange
+        .Text = "The main components of Stable Diffusion are:" & vbCrLf & _
+               "- Variational Autoencoder (VAE)" & vbCrLf & _
+               "- CLIP Encoder" & vbCrLf & _
+               "- U-Net Architecture" & vbCrLf & _
+               "- Latent Diffusion Models" & vbCrLf & _
+               "- Text-to-Image Prompts"
+        .Font.Size = 20
+    End With
+    
+    ' Slide 10: Applications
+    Set Slide = Presentation.Slides.Add(10, 11)
+    With Slide.Shapes.Title.TextFrame.TextRange
+        .Text = "Applications of Stable Diffusion"
+        .Font.Size = 28
+        .Font.Bold = True
+    End With
+    With Slide.Shapes(1).TextFrame.TextRange
+        .Text = "Stable Diffusion has broad applications in graphic design, digital art, and content creation. It powers advanced AI-based text-to-image systems."
+        .Font.Size = 20
+    End With
+    
+    ' Slide 11: Summary
+    Set Slide = Presentation.Slides.Add(11, 11)
+    With Slide.Shapes.Title.TextFrame.TextRange
+        .Text = "Summary"
+        .Font.Size = 28
+        .Font.Bold = True
+    End With
+    With Slide.Shapes(1).TextFrame.TextRange
+        .Text = "Stable Diffusion is a powerful architecture for converting text to image. It encompasses several key components and has various applications."
+        .Font.Size = 20
+    End With
+
+End Sub
